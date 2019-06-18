@@ -43,6 +43,7 @@ class SwAPIHandler extends React.Component{
             [name]: value
         })
     }
+    
     handleSubmit = () => {
         console.log(this.state.name)
         fetch('api/SwAPI/Characters/' + this.state.name, {
